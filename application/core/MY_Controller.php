@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         }
         public function download_api($link){
-            include('/YouTubeDownloader.php');
+            include('./YouTubeDownloader.php');
             $yt = new YouTubeDownloader();
             $data = $yt->getDownloadLinks($link);
             return $data;
